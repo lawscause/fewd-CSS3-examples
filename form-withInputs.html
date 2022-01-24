@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Example - Simple User Information</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <h1>Form with Various Inputs</h1>
+    <br/><br/>
+    <form action="/action_page.php" method="POST" target="_blank">
+      <label for="chkbox1">Check one or more checkboxes</label>
+      <input
+        type="checkbox"
+        id="chkbox1"
+        name="chkbox1"
+        value="Value for chkbox1"
+      />
+      <input
+        type="checkbox"
+        id="chkbox2"
+        name="chkbox2"
+        value="Value for chkbox2"
+      />
+      <br /><br />
+      <label for="chkbox1">Pick a color</label>
+      <input type="color" id="color1" name="color1" />
+      <br /><br />
+      <label for="date1">Select Today's Date</label>
+      <input type="date" id="date1" name="date1" />
+      <br /><br />
+      <label for="date1">Select Appointment's Date and Time</label>
+      <input type="datetime-local" id="datetime1" name="datetime1" />
+      <br /><br />
+      <label for="email">Enter your email address</label>
+      <input type="email" id="email1" name="email1" />
+      <br /><br />
+      <label for="password">Enter your password</label>
+      <input type="password" id="password1" name="password1" />
+      <br /><br />
+      <br /><br />
+      <label for="file1">Enter your password</label>
+      <input type="file" id="file1" name="file1"/>
+      <br /><br />
+      <input type="hidden" />
+      <br /><br />
+      <input type="image" />
+      <br /><br />
+      <label for="month1">Select Current Month & Year</label>
+      <input type="month" />
+      <br /><br />
+      <label for="number1">Enter a number</label>
+      <input type="number" id="number1" name="number1" />
+      <br /><br />
+      <label for "YesNo">Is the form complete?</label>
+      <label for="number1">Yes</label>
+      <input type="radio" id="radio1" name="YesNo" value="Yes" />
+      <label for="number1">No</label>
+      <input type="radio" id="radio2" name="YesNo" value="No" />
+      <br /><br />
+      <label for "range1">Select a range</label>
+      <input type="range" id="range1" name="range1"/>
+      <br /><br />
+      <input type="reset" />
+      <br /><br />
+      <label for "range1">Enter Search Term</label>
+      <input type="search" />
+      <br /><br />
+      <input type="submit" />
+      <br /><br />
+      <label for "tel1">Enter a telephone #</label>
+      <input type="tel" />
+      <br /><br />
+      <label for "text1">Enter your Name</label>
+      <input type="text" />
+      <br /><br />
+      <label for "time1">Select the current time</label>
+      <input type="time" />
+      <br /><br />
+      <label for "url1">Enter the site's url</label>
+      <input type="url" />
+      <br /><br />
+      <label for "week1">Please select this week</label>
+      <input type="week" />
+      <br /><br />
+      
+      <input
+        type="button"
+        onclick="alert('Hello World!')"
+        value="Say Hello World"
+      />
+    </form>
+  </body>
+</html>

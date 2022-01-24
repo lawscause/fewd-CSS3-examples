@@ -1,0 +1,64 @@
+/*
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
+https://www.w3schools.com/tags/tag_body.asp
+
+*/
+body {
+  background-color: lightgray;
+}
+
+/* 
+p is the selector.
+The selector points to the HTML element you want to style.
+The declaration block contaians one or more declarations 
+separated by semicolons.
+The information contained within {...} are declarations.
+Each declaration includes a CSS property name and a value, 
+separated by a colon.
+ */
+p {
+  color: red; /* color is a propery and blue is its value.*/
+  text-align: left; /* text-align is a property and left is its value */
+}
+
+/*
+The id selector uses the id attribute of an HTML element to 
+select a specific element.
+The id of an element is unique within a page, 
+so the id selector is used to select one unique element!
+To select an element with a specific id, 
+write a hash (#) character, followed by the id of the element.
+*/
+#para1 {
+  text-align: left; /* text-align is a property and left is its value */
+  color: green; /* color is a property and green is its value */
+}
+
+/*
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, 
+followed by the class name.
+*/
+.right {
+  /* the name of the class is right */
+  text-align: right; /* text-align is a property and right is its value */
+  color: coral; /* color is a property and coral is its value */
+}
+
+/*
+The universal selector (*) selects all HTML elements on the page.
+*/
+* {
+  /* (*) selects all HTML elements on the page */
+  text-align: center; /* text-align is a property and center is its value */
+  color: blue; /* color is a property and blue is its value */
+}
+
+/* You can group selectors by seperating them with a comma */
+h2,
+h3,
+p {
+  /* now the headings h1 and h2, as well as the paragraph p elements share the same styling */
+  text-align: center;
+  color: gold;
+}
