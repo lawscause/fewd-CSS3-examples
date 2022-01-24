@@ -1,0 +1,96 @@
+body {
+  background-color: lightgray;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c87c9;
+  padding-right: 10px;
+}
+
+/* The [attribute] selector is used to select elements with a specified attribute. */
+label[for] {
+  color: red;
+}
+
+/*  
+The [attribute="value"] selector is used to select elements with a specified attribute and value.
+*/
+input[type="submit"] {
+  background-color: darkgray;
+}
+
+/*  
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+*/
+input[name~="color1"] {
+  background-color: gainsboro;
+}
+
+/*
+div.input-container {
+  border: 1px solid #666;
+  background-color: white;
+}
+*/
+
+input {
+  width: 50%;
+  height: 28px;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: lightblue;
+  color: #1c87c9;
+  font-size: 16px;
+}
+
+/* selects input element with id checkbox1 
+defines all four padding options */
+input#chkbox1 {
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  width: 10%;
+  height: 28px;
+  border: 1px solid #666;
+  background: lightblue;
+  color: #1c87c9;
+  font-size: 16px;
+}
+
+/* selects input element with id checkbox2 
+defines all four padding options 
+but uses the inline method */
+input#chkbox2 {
+  padding: 5px 3px 5px 8px;
+  width: 10%;
+  height: 28px;
+  border: 1px solid #666;
+  background: lightblue;
+  color: #1c87c9;
+  font-size: 16px;
+}
+
+input[type="image"] {
+  width: 48px;
+  height: 48px;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.info {
+  background-color: #2196f3;
+}
+.warning {
+  background-color: #ff9800;
+}
+.danger {
+  background-color: #f44336;
+}
+.other {
+  background-color: #e7e7e7;
+  color: black;
+}
