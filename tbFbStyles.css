@@ -1,0 +1,34 @@
+.my-page-wrapper {
+  margin: 15px;
+  text-align: center;
+  background-color: red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.blue-column {
+  background-color: blue;
+  height: 100px;
+}
+
+.light-blue-column {
+  background-color: lightblue;
+  height: 100px;
+}
+
+.gray-column {
+  background-color: gray;
+  height: 100px;
+}

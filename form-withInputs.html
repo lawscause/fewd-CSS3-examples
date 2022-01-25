@@ -5,85 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Form Example - Simple User Information</title>
+    <!-- link to external styles-->
+    <link rel="stylesheet" href="tbStyles4inputs.css" />
+    <!-- Defn of link rel attribute
+      https://www.w3schools.com/tags/att_link_rel.asp-->
+    <!-- interal styles defined by <style> element -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
   </head>
   <body>
     <h1>Form with Various Inputs</h1>
     <br/><br/>
     <form action="/action_page.php" method="POST" target="_blank">
-      <label for="chkbox1">Check one or more checkboxes</label>
-      <input
-        type="checkbox"
-        id="chkbox1"
-        name="chkbox1"
-        value="Value for chkbox1"
-      />
-      <input
-        type="checkbox"
-        id="chkbox2"
-        name="chkbox2"
-        value="Value for chkbox2"
-      />
+      <div class="input-container">
+        <label for="chkbox1">Check one or more checkboxes</label>
+        <input
+          type="checkbox"
+          id="chkbox1"
+          name="chkbox1"
+          value="Value for chkbox1"
+        />
+        <input
+          type="checkbox"
+          id="chkbox2"
+          name="chkbox2"
+          value="Value for chkbox2"
+        />
+      </div>
       <br /><br />
-      <label for="chkbox1">Pick a color</label>
+      <div class="input-container group-containter">
+      <label for="color1">Pick a color</label>
       <input type="color" id="color1" name="color1" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for="date1">Select Today's Date</label>
       <input type="date" id="date1" name="date1" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for="date1">Select Appointment's Date and Time</label>
       <input type="datetime-local" id="datetime1" name="datetime1" />
+    </div>
       <br /><br />
-      <label for="email">Enter your email address</label>
-      <input type="email" id="email1" name="email1" />
+      <div class="input-container">
+      <label for="email">Enter your Gmail address</label>
+      <!-- info about email input  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
+      <input type="email" id="email1" name="email1" pattern=".+@gmail\.com" size="30" placeholder="you@gmail.com" required>
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for="password">Enter your password</label>
       <input type="password" id="password1" name="password1" />
+    </div>
       <br /><br />
       <br /><br />
+      <div class="input-container">
       <label for="file1">Enter your password</label>
       <input type="file" id="file1" name="file1"/>
+    </div>
       <br /><br />
+      <div class="input-container">
       <input type="hidden" />
+    </div>
       <br /><br />
-      <input type="image" />
+      <div class="input-container">
+      <input type="image" src="https://www.w3schools.com/tags/img_submit.gif" alt="Submit" >
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for="month1">Select Current Month & Year</label>
       <input type="month" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for="number1">Enter a number</label>
       <input type="number" id="number1" name="number1" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "YesNo">Is the form complete?</label>
       <label for="number1">Yes</label>
       <input type="radio" id="radio1" name="YesNo" value="Yes" />
+    </div>
+    <div class="input-container">
       <label for="number1">No</label>
       <input type="radio" id="radio2" name="YesNo" value="No" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "range1">Select a range</label>
       <input type="range" id="range1" name="range1"/>
+    </div>
       <br /><br />
+      <div class="input-container">
       <input type="reset" />
+    </div>
       <br /><br />
       <label for "range1">Enter Search Term</label>
       <input type="search" />
       <br /><br />
+      <div class="input-container">
       <input type="submit" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "tel1">Enter a telephone #</label>
       <input type="tel" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "text1">Enter your Name</label>
       <input type="text" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "time1">Select the current time</label>
       <input type="time" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "url1">Enter the site's url</label>
       <input type="url" />
+    </div>
       <br /><br />
+      <div class="input-container">
       <label for "week1">Please select this week</label>
       <input type="week" />
+    </div>
       <br /><br />
       
       <input
